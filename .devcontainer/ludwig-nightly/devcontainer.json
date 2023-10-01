@@ -1,0 +1,23 @@
+{
+    "name": "ludwig-nightly",
+    "image": "ludwig-ray:nightly",
+   // add volume to mount the current directory into the container
+   "mounts": [
+    "source=${localWorkspaceFolder}/../ludwig,target=/workspace,type=bind,consistency=cached"
+    ],
+    // add the following to the settings section
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.anaconda-extension-pack",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "eamodio.gitlens",
+                "ms-python.flake8",
+                "ms-vscode-remote.remote-containers",
+                "ms-python.black-formatter"
+            ]
+        }
+    }	    
+}
