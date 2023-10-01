@@ -4,7 +4,7 @@
     "image": "ludwig-ray:master",
     // add volume to mount the current directory into the container
     "mounts": [
-        "source=${localWorkspaceFolder}/../ludwig,target=/workspace,type=bind,consistency=cached"
+        "source=${localWorkspaceFolder}/../ludwig,target=/workspaces,type=bind,consistency=cached"
     ],
 	// add the following to the settings section
 	"customizations": {
